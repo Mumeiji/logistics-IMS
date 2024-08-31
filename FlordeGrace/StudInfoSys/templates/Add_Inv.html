@@ -17,6 +17,35 @@
         {% include 'Header.html' %}
 
         <!-- PAGE BODY -->
-        
+
+        <div class="col-md-6">
+          <form class="card">
+            <div class="card-header">
+              <h3 class="card-title">New Stock</h3>
+            </div>
+            <div class="card-body">
+              <div class="mb-3">
+                <label class="form-label required">Stock Name</label>
+                <div>
+                  <input type="email" class="form-control" aria-describedby="emailHelp" placeholder="Enter stock name">
+                </div>
+              </div>
+              <div class="mb-3">
+                <label class="form-label required">Amount</label>
+                <div>
+                  <input type="number" class="form-control" placeholder="Enter amount">
+                </div>
+              </div>
+            </div>
+            <div class="card-footer text-end">
+              <button type="add" class="btn btn-success">Add to Inventory</button>
+              <button type="reset" class="btn btn-danger">Reset</button>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+          </form>
+        </div>
+        <div class="col-md-6">
+          <form class="card">
+            <div class="card-header">
 
 {% endblock content %}
