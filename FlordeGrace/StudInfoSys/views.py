@@ -27,9 +27,6 @@ def supplier_list(request):
 def equipment_maintenance(request):
     return render(request, 'Equip_Maintenance.html')
 
-def archive(request):
-    return render(request, 'Archive.html')
-
 def archived_inventory(request):
     return render(request, 'Archived_Inv.html')
 
