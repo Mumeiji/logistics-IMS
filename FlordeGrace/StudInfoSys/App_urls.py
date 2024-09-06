@@ -13,4 +13,6 @@ urlpatterns = [
     path('Supplier_List.html', views.supplier_list),
     path('Equip_Maintenance.html', views.equipment_maintenance),
     path('Archive.html', views.archive),
+    path('Archived_Inv.html', views.archived_inventory),
+    path('Archived_Suppliers.html', views.archived_suppliers),
 ]

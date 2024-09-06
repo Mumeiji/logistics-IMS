@@ -6,22 +6,33 @@
 <!-- MAIN CONTENT OF ADMIN -->
 {% block content %}
 
-  <!-- INCLUDES SIDEBAR MENU -->
-  {% include 'Sidebar.html' %}
-    <script src="./dist/js/demo-theme.min.js?1692870487"></script>
-    <div class="page">
+<!-- INCLUDES SIDEBAR MENU -->
+{% include 'Sidebar.html' %}
+<script src="./dist/js/demo-theme.min.js?1692870487"></script>
+<div class="page">
 
-      <div class="page-wrapper">
+  <div class="page-wrapper">
 
-        <!-- INCLUDES HEADER -->
-        {% include 'Header.html' %}
+    <!-- INCLUDES HEADER -->
+    <div class="page-header d-print-none">
+      <div class="container-xl">
+        <div class="row g-2 align-items-center">
+          <div class="col">
+            <h2 class="page-title">
+              Department Inventory
+            </h2>
+          </div>
+        </div>
+      </div>
+    </div>
 
-        <!-- PAGE BODY -->
-        <div class="page-body">
-          <div class="container-xl">
-            <div class="row row-cards">
-              <div class="col-lg-8">
-                <div class="d-flex align-items-center mb-3">
+    <!-- PAGE BODY -->
+    <div class="page-body">
+      <div class="container-xl">
+        <div class="row row-cards">
+          <div class="col-12">
+            <div class="card">
+              <div class="card-header">
                   <div class="input-icon me-3 flex-grow-1">
                     <input type="text" value="" class="form-control" placeholder="Search…">
                     <span class="input-icon-addon">
@@ -38,6 +49,7 @@
                     <label for="btn-radio-basic-1" type="button" class="btn">All Items</label>
                     <input type="radio" class="btn-check" name="btn-radio-basic" id="btn-radio-basic-2" autocomplete="off">
                     <label for="btn-radio-basic-2" type="button" class="btn">Add new Item</label>
+
                   </div>
                 </div>
 

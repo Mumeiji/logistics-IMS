@@ -6,34 +6,32 @@
 <!-- MAIN CONTENT OF ADMIN -->
 {% block content %}
 
-  <!-- INCLUDES SIDEBAR MENU -->
-  {% include 'Sidebar.html' %}
-    <script src="./dist/js/demo-theme.min.js?1692870487"></script>
-    <div class="page">
+<!-- INCLUDES SIDEBAR MENU -->
+{% include 'Sidebar.html' %}
+<script src="./dist/js/demo-theme.min.js?1692870487"></script>
+<div class="page">
 
-      <div class="page-wrapper">
+  <div class="page-wrapper">
 
-        <!-- INCLUDES HEADER -->
-        {% include 'Header.html' %}
-
-        <style>
-          .form-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 50h; /* Adjust the height as needed */
-            margin-top: 5%; /* Pushes the form down */
-          }
-        </style>
-      <body>
+    <!-- INCLUDES HEADER -->
+    <div class="page-header d-print-none">
+      <div class="container-xl">
+        <div class="row g-2 align-items-center">
+          <div class="col">
+            <h2 class="page-title">
+              Add Supplier
+            </h2>
+          </div>
+        </div>
+      </div>
+    </div>
  
         <!-- PAGE BODY -->
-            <div class="form-container">
-              <div class="col-md-6">
-                <form class="card">
-                  <div class="card-header">
-                    <h3 class="card-title">Add Supplier</h3>
-                  </div>
+        <div class="page-body">
+          <div class="container-xl">
+            <div class="row row-cards">
+              <div class="col-12">
+                <div class="card">
                   <div class="card-body">
                     <div class="mb-3">
                       <label class="form-label required">Supplier Name</label>

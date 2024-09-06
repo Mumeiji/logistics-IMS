@@ -29,3 +29,9 @@ def equipment_maintenance(request):
 
 def archive(request):
     return render(request, 'Archive.html')
+
+def archived_inventory(request):
+    return render(request, 'Archived_Inv.html')
+
+def archived_suppliers(request):
+    return render(request, 'Archived_Suppliers.html')

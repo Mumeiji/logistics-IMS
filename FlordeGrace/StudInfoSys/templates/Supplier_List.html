@@ -6,26 +6,33 @@
 <!-- MAIN CONTENT OF ADMIN -->
 {% block content %}
 
-  <!-- INCLUDES SIDEBAR MENU -->
-  {% include 'Sidebar.html' %}
-    <script src="./dist/js/demo-theme.min.js?1692870487"></script>
-    <div class="page">
+<!-- INCLUDES SIDEBAR MENU -->
+{% include 'Sidebar.html' %}
+<script src="./dist/js/demo-theme.min.js?1692870487"></script>
+<div class="page">
 
-      <div class="page-wrapper">
+  <div class="page-wrapper">
 
-        <!-- INCLUDES HEADER -->
-        {% include 'Header.html' %}
+    <!-- INCLUDES HEADER -->
+    <div class="page-header d-print-none">
+      <div class="container-xl">
+        <div class="row g-2 align-items-center">
+          <div class="col">
+            <h2 class="page-title">
+              Supplier List
+            </h2>
+          </div>
+        </div>
+      </div>
+    </div>
 
-        <!-- PAGE BODY -->
-        <div class="page-body">
-          <div class="container-xl">
-            <div class="row row-cards">
-              <div class="col-lg-8">
-
-                <!-- Table Card -->
-                <div class="col-12">
-                  <div class="card">
-                    <div class="table-responsive">
+    <!-- PAGE BODY -->
+    <div class="page-body">
+      <div class="container-xl">
+        <div class="row row-cards">
+          <div class="col-12">
+            <div class="card">
+              <div class="card-header">
                       <table
       class="table table-vcenter table-mobile-md card-table">
                         <thead>
@@ -182,7 +189,6 @@
                               </div>
                             </td>
                           </tr>
-                              </div>
                             </td>
                           </tr>
                         </tbody>
