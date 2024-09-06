@@ -9,17 +9,8 @@ def add_inventory(request):
 def depreciated_inventory(request):
     return render(request, 'Depreciated_Inv.html')
 
-def depinv_classroom(request):
-    return render(request, 'DepInv_Classroom.html')
-
-def depinv_office(request):
-    return render(request, 'DepInv_Office.html')
-
-def depinv_library(request):
-    return render(request, 'DepInv_Library.html')
-
-def depinv_clinic(request):
-    return render(request, 'DepInv_Clinic.html')
+def depart_inv(request):
+    return render(request, 'Depart_Inv.html')
 
 def purchase_request(request):
     return render(request, 'Purchase_Req.html')
