@@ -24,6 +24,9 @@ def add_supplier(request):
 def supplier_list(request):
     return render(request, 'Supplier_List.html')
 
+def edit_supplier(request):
+    return render(request, 'Edit_Supplier.html')
+
 def equipment_maintenance(request):
     return render(request, 'Equip_Maintenance.html')
 
