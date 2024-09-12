@@ -3,6 +3,7 @@ from . import views
 
 # URL CONFIGURATION
 urlpatterns = [
+    path('', views.admin_homepage),
     path('Admin_Home.html', views.admin_homepage),
     path('Add_Inv.html', views.add_inventory),
     path('Depreciated_Inv.html', views.depreciated_inventory),
